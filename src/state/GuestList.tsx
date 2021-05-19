@@ -5,8 +5,8 @@ const GuestList: React.FC = () => {
   const [guests, setGuests] = useState<string[]>([]);
 
   const onClick = () => {
-    setName('');
     setGuests([...guests, name]);
+    setName('');
   };
 
   return (

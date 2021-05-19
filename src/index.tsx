@@ -7,3 +7,5 @@ const App = () => {
     </div>
   );
 };
+
+ReactDOM.render(<App />, document.querySelector('#root'));

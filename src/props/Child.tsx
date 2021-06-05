@@ -16,7 +16,7 @@ export const Child = ({ color, onClick }: ChildProps) => {
 
 // Method 2: Tell TS that this is a React (function) component
 // Benefit 1: It recognizes and checks that the component has and conforms to the properties of React components
-// Benefit 2: It recognizes the children argument. The children argument includes anything between <ReactComponent></ReactComponent> open/close brackets
+// Benefit 2: It recognizes the children argument without manually adding it to Interface. The children argument includes anything between <ReactComponent></ReactComponent> open/close brackets
 export const ChildAsFC: React.FC<ChildProps> = ({ color, onClick, children }) => {
   return (
     <div>

@@ -5,6 +5,7 @@ interface ChildProps {
 
 // Method 1: Don't tell TS that this is a React component
 // Shortcoming: TS doesn't recognize all the properties associated with a React component (e.g. displayName, contextTypes, propTypes, etc.)
+// Must add 'children' to ChildProps interface if you want to use it
 export const Child = ({ color, onClick }: ChildProps) => {
   return (
     <div>

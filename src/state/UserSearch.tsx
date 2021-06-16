@@ -1,5 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-const UserSearch: React.FC = () => {
-  
-}
+//need to build this out
+const UserSearch: React.FC = () => {};

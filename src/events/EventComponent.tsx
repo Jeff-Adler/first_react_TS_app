@@ -3,6 +3,7 @@ export const EventComponent: React.FC = () => {
     console.log(event);
   };
 
+  // Allows for automatic drag event
   const onDragStart = (event: React.DragEvent<HTMLDivElement>) => {
     console.log(event);
   };

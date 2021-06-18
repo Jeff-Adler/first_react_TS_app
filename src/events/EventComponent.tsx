@@ -7,6 +7,7 @@ export const EventComponent: React.FC = () => {
     console.log(event);
   };
 
+  // By declaring React Event Type for event handlers, they know (event) is passed in
   return (
     <div>
       <input onChange={onChange} />

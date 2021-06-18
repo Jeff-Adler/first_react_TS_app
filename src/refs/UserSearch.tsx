@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 //Need to not hard code this in
 const users = [
@@ -8,6 +8,7 @@ const users = [
 
 //need to build this out
 export const UserSearch: React.FC = () => {
+  const inputRef = useRef();
   const [name, setName] = useState('');
   const [user, setUser] = useState<{ name: string; age: number } | undefined>();
 

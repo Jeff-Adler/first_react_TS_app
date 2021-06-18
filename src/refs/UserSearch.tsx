@@ -8,7 +8,7 @@ const users = [
 
 //need to build this out
 export const UserSearch: React.FC = () => {
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement | null>(null);
   const [name, setName] = useState('');
   const [user, setUser] = useState<{ name: string; age: number } | undefined>();
 
@@ -23,7 +23,7 @@ export const UserSearch: React.FC = () => {
   return (
     <div>
       User Search
-      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <input ref={inputRef} value={name} onChange={(e) => setName(e.target.value)} />
       <button onClick={onClick}>Find User</button>
       <div>{user ? user.name : ''}</div>
       <ul>

@@ -13,7 +13,7 @@ export const UserSearch: React.FC = () => {
   const [user, setUser] = useState<{ name: string; age: number } | undefined>();
 
   useEffect(() => {
-    // Type guard
+    // Type guard. Could also do a 'positive' typeguard, but return makes it clearer
     if (!inputRef.current) {
       return;
     }
